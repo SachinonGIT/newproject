@@ -93,7 +93,8 @@ export default function Home() {
         <AnimatePresence mode="wait">
           {!isFullscreen && (
             <motion.nav 
-              className="sticky top-0 left-0 right-0 mx-auto p-2 sm:p-4 z-50"
+            // here i will change the code from sticky to Fixed
+              className="fixed top-0 left-0 right-0 mx-auto p-2 sm:p-4 z-50"
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -50, opacity: 0 }}
